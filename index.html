@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">;
+<script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>;
+    <title>Document</title>
+</head>
+ <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100px;
+          }
+          .container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+    </style>
+<body>
+        <div class="container">
+        <div class="card">
+            <h2>Create Account</h2>
+            <input type="text" id="username" placeholder="Username"> 
+            <input type="password" id="password" placeholder="Password">
+            <button id="signup-btn" py-click="handle_signup">Sign up</button>
+            
+            <div id="message"></div>
+        </div>
+    </div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
